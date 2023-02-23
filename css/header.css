@@ -1,0 +1,245 @@
+header  {
+    background-color: #000;
+    color: #0d6efd;
+    padding: 0%;
+    grid-area: content;
+    z-index: 777;
+    max-width: 100% ;
+    width: 100% ;
+    place-self: start center;
+    margin-top: 0px;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+}
+
+.bg-dark{
+    background-color: #000000 !important;
+}
+
+.skills {
+    grid-area: unset; 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.skills__icon {
+    width: 100px;
+    height: 147px;
+    background-color: var(--icon-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.skills__container {
+    display: flex;
+    gap: 39px;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+}
+
+sobre {
+    margin-right: 183px;
+    border: rgb(238, 7, 7);
+    border-color: blueviolet;
+    margin-top: 119px;
+    grid-area: tittle;
+    font-size: 150px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 119, 255), #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+element.style {
+    border: inset rgb(2, 102, 253);
+    background: linear-gradient(rgb(0, 0, 0), #01213b);
+    display: flex;
+    padding: 45px;
+}
+
+.foto{
+    margin-left: 200px;
+}
+header h1{
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.navbar-brand {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-right: 0px; 
+    font-size: 0px; 
+    
+    text-decoration: none;
+    white-space: nowrap;
+}
+header h1, a {
+    color: rgb(5, 71, 212);
+    transition: 0.2s ease-in-out;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+
+header h1, a{
+    color: rgb(14, 151, 21);
+    transition: 0.2s ease-in-out;
+}
+
+header a:hover, h1:hover{
+    color: rgb(252, 252, 252);
+}
+
+
+.menu {
+    display: flex;
+    gap: 72px;
+    font-size: 1.25rem;
+}
+
+.menu li {
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.25s;
+}
+
+.menu li:hover {
+    border-color: var(--primary-color);
+}
+
+.section__tittle {
+    grid-area: tittle;
+    font-size: 280px;
+    text-align: center;
+    background: linear-gradient(#444, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.profile__name{
+    margin: auto;
+}
+
+.projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+.card-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+    
+}
+
+.card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.card::before {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.781);
+    content: 'Clique aqui para abrir o projeto';
+    color: rgb(255, 252, 252);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    transform: translateY(100%);
+    transition: transform 0.6s;
+}
+
+.card:hover::before {
+    transform: translateY(0%);
+}
+
+#ctt {
+    margin-top: 300px;
+    grid-area: tittle;
+    font-size: 150px;
+    text-align: center;
+    background: linear-gradient(rgb(10, 145, 50), #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+  .contato-container h3 {
+    font-size: 1.5rem;
+  }
+  
+  .contato-item {
+    display: flex;
+    gap: 12px;
+    
+  }
+  
+  .contato-item__icon {
+    font-size: 1.25rem;
+    
+  }
+  
+  .social-container {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: auto;
+    color: bisque;
+    
+  }
+  
+  .social:hover {
+    color: var(--primary-color);
+    
+  }
+  
+  .social {
+    width: 64px;
+    height: 64px;
+    background-color: var(--icon-color);
+    font-size: 2rem;
+    display: grid;
+    place-content: center;
+    transition: color 0.5s;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .link-container {
+    grid-area: link;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: right;
+  }
+  
+  .link-container h3 {
+    font-size: 1.5rem;
+  }

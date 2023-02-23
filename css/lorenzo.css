@@ -1,0 +1,122 @@
+.sobre-mim {
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'tittle tittle'
+    'description skills';
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+header h1, a {
+    color: rgb(16, 133, 12) !important;
+    transition: 0.2s ease-in-out;
+}
+.description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.description__tittle {
+    font-size: 48px;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.description__text {
+    font-size: 1.5rem;
+    width: 85%;
+    line-height: 150%;
+    text-align: left;
+    justify-content: left;
+}
+
+.skills {
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.skills__tittle {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.skills__icon {
+    width: 106px;
+    height: 111px;
+    background-color: var(--icon-color);
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 74px;
+    padding: 74px;
+    margin-left: 43px;
+}
+
+
+.skills__icon i {
+    font-size: 3rem;
+}
+
+
+
+.ola{
+    color:rgb(252, 252, 252);
+
+    background-color: rgb(0, 0, 0);
+    
+    border-radius: 100px;
+    margin: 50px;
+    padding: 50px;
+    border: rgb(238, 7, 7);
+    border-color: blueviolet;
+}
+
+#sobre {
+    border: rgb(238, 7, 7);
+    border-color: blueviolet;
+    margin-top:  300px;
+    grid-area: tittle;
+    font-size: 150px;
+    text-align: center;
+    background: linear-gradient(rgb(9, 145, 61), #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#projetos {
+    margin-top:  700px;
+    grid-area: tittle;
+    font-size: 150px;
+    text-align: center;
+    background: linear-gradient(rgb(9, 136, 66), #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#contato {
+    margin-top:  550px;
+    grid-area: tittle;
+    font-size: 150px;
+    text-align: center;
+    background: linear-gradient(rgb(11, 143, 44), #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
