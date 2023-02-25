@@ -36,8 +36,6 @@ footer{
     align-items: baseline;
     justify-content: space-around;
     align-content: center;
-    margin-top: 100px;
-    
 }
 
 @media (max-width: 3000px) {
@@ -52,7 +50,6 @@ footer{
   justify-content: center;
   align-items: center;
   background: rgb(31, 29, 33);
-  background: linear-gradient(230deg, rgba(82,17,114,1) 0%, rgba(57,56,58,1) 100%);
   background-size: cover;
   box-shadow: inset 0px -40px 40px #000;
 }
@@ -61,8 +58,25 @@ footer{
   filter: grayscale();
 }
 
-#skills {
+.ola{
+  border: none;
+  display: flex;
+  padding: 50px;
+  margin: auto;
+}
+
+#sobre {
   margin-top: 200px; 
+  grid-area: tittle;
+  font-size: 150px;
+  text-align: center;
+  background: linear-gradient(rgb(11, 158, 19), #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#skills {
   grid-area: tittle;
   font-size: 150px;
   text-align: center;
@@ -97,7 +111,8 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(./code.gif);
+    background-image: linear-gradient(#00ff1593, rgb(0, 0, 0));
+
 }
 
 .profile__foto {
@@ -117,5 +132,5 @@ footer{
 
 .profile__name {
   font-size: 4rem;
-  color: var(--primary-color);
+  color:#fff;
 }
